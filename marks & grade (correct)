@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main ()
+{
+	float m1,m2,m3,physics;
+	float per,avg;
+	float total;
+	
+	printf(" enter the marks of python :\n ");
+	scanf("%f", &m1);
+	printf(" enter the marks of c programming:\n");
+	scanf("%f", &m2);
+	printf("enter the marks of maths:\n ");
+	scanf("%f", &m3);
+	printf(" enter the marks of physics:\n");
+	scanf("%f", &physics);
+	total= m1+m2+m3+physics;
+	printf("\n the total mark is\n %.2f ",total);
+	avg = (total/4);
+	printf("\n the avg mark  is:\n %.2f", avg);
+	
+	if(avg>=75) printf("\n distinction");
+	else if(avg>=60) printf("\n first division B");
+	else if(avg>=50) printf("\n second division");
+	else if(avg<40) printf("\n Fail ");
+}
